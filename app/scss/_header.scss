@@ -119,7 +119,7 @@ $header-min-menu: 70px;
 		display: inline-block;
 		vertical-align: middle;
 		margin-right: 15px;
-		width: 350px;
+		width: 253px;
 	}
 	.slogan{
 		width: 60%;
@@ -134,8 +134,33 @@ $header-min-menu: 70px;
 	}
 }
 .header-logo-content{
-	background-color: $color-1;
 	position: absolute;
+	height: 80px;
+	display: flex;
+	z-index: 2;
+	align-items: center;
+	padding-right: 15px;
+	&:before, &:after{
+		@extend .clafclear;
+		z-index: -1;
+		top: 0;
+		width: 100vw;
+		
+	}
+	&:before{
+		height: 90px;
+		right: 25px;
+		background-color: $color-3;
+		transform: matrix(1,0,-0.95,1,0,0);
+	}
+	&:after{
+		height: 75px;
+		right: 0;
+		z-index: -2;
+		background-color: rgba($color-2, 0.5);
+		transform: matrix(1,0,-1,1,0,0);
+	}
+
 }
 .header-scroll{
 	.header-top{
@@ -229,14 +254,17 @@ header-link{
 }
 
 .socicons{
-	font-size: 15px;
+	font-size: 14px;
 	.fa{
-		font-size: 20px;
+		font-size: 14px;
+	}
+	.fa-vk{
+		font-size: 18px;	
 	}
 	li{
 		display: inline-block;
 		transition: color 0.3s ease;
-		margin-left: 10px;
+		margin-left: 5px;
 		&:nth-child(1){
 			margin-left: 0;
 		}
@@ -249,7 +277,7 @@ header-link{
 			}
 		}
 		&:hover{
-			color: $color-3;
+			color: $color-2;
 		}
 	}
 	.fa-paper-plane{
@@ -274,8 +302,9 @@ header-link{
 		height: 100%;
 	}
 	ul:not([class*="sub-menu"]){
-		display: flex;
-	  justify-content: space-between;
+		//display: flex;
+	  //justify-content: space-between;
+	  text-align: right;
 		width: 100%;
 		height: 100%;
 		@extend .letter-none;
@@ -291,18 +320,22 @@ header-link{
 				position: relative;
 				display: flex;
     		align-items: center;
+    		&:before{
+    			@extend .clafclear;
+    			height: 15px;
+    			background-color: $color-gray-2;
+    			width: 1px;
+    			right: -1px;
+    		}
 			}
 			&.active{
-				background-color: $color-1;
+				background-color: $color-2;
 			}
 			&:hover{
-				&:before{
-					background-color: $color-3;
-					opacity: 1;
-				}
 				a{
-					color: $color-3;	
-					&:before{
+					background-color: $color-2;
+					color: white;	
+					&:before, &:after{
 						display: none;
 					}
 				}
@@ -329,20 +362,18 @@ header-link{
 		}
 	}
 	li{
-		//overflow: hidden;
 		display: inline-block;
-		transition: all 0.4s ease;
 		a{
 			transition: all 0.3s ease;
 			position: relative;
 			z-index: 2;
 		}
-		&:nth-last-child(1){
-			a{
-				&:before{
-					display: none;
-				}
-			}
+		&:nth-child(1) a:after{
+			@extend .clafclear;
+			height: 15px;
+			background-color: $color-gray-2;
+			width: 1px;
+			left: 0;
 		}
 		&.active{
 			background-color: $color-2;
@@ -372,7 +403,7 @@ ul[class*="sub-menu"]{
 .sub-menu-1{
 	white-space: normal;
 	text-transform: none;
-	transform: matrix(1,0,0,1,0,-5);
+	transform: matrix(1,0,0,1,0,5);
 	transform-origin: 40% 0;
 	text-align: left;
 	color: #333;

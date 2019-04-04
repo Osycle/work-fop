@@ -359,51 +359,25 @@
 
 
 
+	//vi init
+	window.vi = $(".vi-btn-toggle").initVi({
+
+		fontSize: 2,		 					// default 2
+		bgColor: "black", 				// default white
+		imgVisibility: "visible", 	// default hidden
+		grayScale: true, 					// default true
+
+		// Callback function
+		callOn: function(){				
+			//$(".fa.fa-eye").addClass("fa-eye-slash")
+		},			
+		callOff: function(){
+			//$(".fa.fa-eye").removeClass("fa-eye-slash")
+		},		
+		callToggle: function(){}
 
 
-
-
-
-		//Preloader
-		window.preLoader = {
-
-			preImg: function(img) {
-				var images = img || document.images,
-					imagesTotalCount = images.length,
-					imagesLoadedCount = 0,
-					preloadPercent = $(".percent").text("0 %");
-
-				if (imagesTotalCount == 0) {
-					preOnload();
-					$(preloadPercent).text("100 %");
-				}
-
-				for (var i = 0; i < imagesTotalCount; i++) {
-					var image_clone = new Image();
-					image_clone.onload = image_loaded;
-					image_clone.onerror = image_loaded;
-					image_clone.src = images[i].src;
-				}
-
-				function preOnload() {
-					onLoaded();
-				}
-
-				function image_loaded() {
-					imagesLoadedCount++;
-					var per = (100 / imagesTotalCount * imagesLoadedCount) << 0;
-
-					setTimeout(function() {
-						//console.log(per);
-						$(preloadPercent).text(per + "%");
-					}, 1);
-
-					if (imagesLoadedCount >= imagesTotalCount) preOnload();
-				}
-			}
-		};
-		preLoader.preImg();
-
+	})
 
 
 
