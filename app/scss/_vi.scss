@@ -10,24 +10,28 @@
 
 
 
+.chess-white, .chess-black{
+	box-shadow: none;
+}
 
 .chess-black{
 	color: white  !important;
-	background: black !important;
+	background-color: black !important;
 	border-color: white !important;
 }
 .chess-white{
 	color: black  !important;
-	background: white !important;
+	background-color: white !important;
 	border-color: black !important;
 }
 
 
 //МИКСИН ЁПТЫ
 @mixin bg-color($color_1, $color_2) {
-
-	@extend .chess-#{$color_1};
-
+	//*:not(.vi-over){
+		@extend .chess-#{$color_1};
+	//}
+/* 
 	[class*='btn-default'], button{
 		@extend .style-#{$color_2};
 		border: 2px solid transparent;
@@ -46,7 +50,7 @@
 	ul li{
 		&:hover, &.active{
 			color: $color_1 !important;
-			background: $color_2 !important;
+			background-image: $color_2 !important;
 			border-color: $color_1 !important;
 			a{
 				background: inherit;
@@ -58,7 +62,7 @@
 	.is-selected{
 		@extend .chess-black;
 	}
-
+ */
 
 
 }
@@ -73,11 +77,7 @@
 
 
 
-.vi{
-	width: 100%;
-}
 .vi-active{
-
 	body.vi-grayscale{
 		filter: grayscale(1);
 	}
@@ -91,6 +91,12 @@
 
 
 
+
+
+
+	//.vi-bg-color-white .vi {@extend .style-white;}
+	//.vi-bg-color-black .vi {@extend .style-black;}
+	
 	.vi-bg-color-black *:not(.vi-over) *{
 		@extend .style-black;
 	}
@@ -98,10 +104,6 @@
 	.vi-bg-color-white *:not(.vi-over) *{
 		@extend .style-white;
 	}
-
-
-	.vi-bg-color-white .vi {@extend .style-white;}
-	.vi-bg-color-black .vi {@extend .style-black;}
 
 	.vi-img-visibility-hidden{
 		&, *{
@@ -127,7 +129,13 @@
 }
 
 
+
+
+/* 
+	VI 
+*/
 .vi{
+	width: 100%;
 	z-index: 5454545;
 	position: fixed;
 	&.active{
@@ -172,9 +180,6 @@
 
 
 
-
-
-
 	// VI-FONT-SIZE
 	.vi-font-size{
 
@@ -202,14 +207,6 @@
 			  margin: 0 15px;
 		}
 	}
-
-
-
-
-
-
-
-
 	// VI-BG-COLOR
 	.vi-bg-color{
 
@@ -246,14 +243,10 @@
 
 		.vi-bg-color-1{
 			//background: black !important;
-			
 		}
 		.vi-bg-color-2{
 			//background: white !important;
 		}
-
-
-
 	}
 
 

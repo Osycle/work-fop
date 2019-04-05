@@ -217,9 +217,12 @@ $header-min-menu: 70px;
 		border: 1px solid rgba(black, 0.1);
 	}
 	.hide-list{
+
 		position: absolute;
 		opacity: 0;
 		background-color: $color-1;
+		padding: 10px;
+    margin-left: -10px;
 		li{
 			margin: 5px 0;
 		}
@@ -231,6 +234,7 @@ $header-min-menu: 70px;
 	#langlist{
 		&:checked{
 			&~.hide-list{
+				z-index: 10;
 				opacity: 1;
 			}
 		}

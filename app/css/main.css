@@ -6726,50 +6726,87 @@ tbody.collapse.in {
 /*
 	vi
 */
-.chess-black, .style-black, .style-white [class*='btn-default'], .style-black [class*='btn-default'] [class*='btn-default'], .style-black button [class*='btn-default'], .vi-active .vi-bg-color-white *:not(.vi-over) * [class*='btn-default'], .vi-active .vi-bg-color-white .vi [class*='btn-default'], .style-white button, .style-black [class*='btn-default'] button, .style-black button button, .style-black button * button, .vi-active .vi-bg-color-white *:not(.vi-over) * button, .vi-active .vi-bg-color-white .vi button, .style-white [class*='btn-default'] *, .style-black [class*='btn-default'] [class*='btn-default'] *, .style-black button [class*='btn-default'] *, .vi-active .vi-bg-color-white *:not(.vi-over) * [class*='btn-default'] *, .vi-active .vi-bg-color-white .vi [class*='btn-default'] *, .style-white button *, .style-black [class*='btn-default'] button *, .style-black button button *, .style-black button * button *, .vi-active .vi-bg-color-white *:not(.vi-over) * button *, .vi-active .vi-bg-color-white .vi button *, .vi-active .vi-bg-color-black *:not(.vi-over) *, .vi-active .vi-bg-color-black .vi, .style-black .is-selected, .vi-active .vi-bg-color-black *:not(.vi-over) * .is-selected, .vi-active .vi-bg-color-black .vi .is-selected, .style-white .is-selected, .vi-active .vi-bg-color-white *:not(.vi-over) * .is-selected, .vi-active .vi-bg-color-white .vi .is-selected {
+.chess-white, .style-white, .vi-active .vi-bg-color-white *:not(.vi-over) *, .chess-black, .style-black, .vi-active .vi-bg-color-black *:not(.vi-over) * {
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.chess-black, .style-black, .vi-active .vi-bg-color-black *:not(.vi-over) * {
   color: white  !important;
-  background: black !important;
+  background-color: black !important;
   border-color: white !important; }
 
-.chess-white, .style-black [class*='btn-default']:hover, .vi-active .vi-bg-color-black *:not(.vi-over) * [class*='btn-default']:hover, .vi-active .vi-bg-color-black .vi [class*='btn-default']:hover, .style-black button:hover, .vi-active .vi-bg-color-black *:not(.vi-over) * button:hover, .vi-active .vi-bg-color-black .vi button:hover, .style-white, .style-black [class*='btn-default'], .style-black button, .style-black [class*='btn-default'] *, .style-black button *, .vi-active .vi-bg-color-white *:not(.vi-over) *, .vi-active .vi-bg-color-white .vi, .style-white [class*='btn-default']:hover, .vi-active .vi-bg-color-white *:not(.vi-over) * [class*='btn-default']:hover, .vi-active .vi-bg-color-white .vi [class*='btn-default']:hover, .style-white button:hover, .vi-active .vi-bg-color-white *:not(.vi-over) * button:hover, .vi-active .vi-bg-color-white .vi button:hover {
+.chess-white, .style-white, .vi-active .vi-bg-color-white *:not(.vi-over) * {
   color: black  !important;
-  background: white !important;
+  background-color: white !important;
   border-color: black !important; }
 
-.style-black [class*='btn-default'], .style-white [class*='btn-default'] [class*='btn-default'], .vi-active .vi-bg-color-white *:not(.vi-over) * [class*='btn-default'] [class*='btn-default'], .vi-active .vi-bg-color-white .vi [class*='btn-default'] [class*='btn-default'], .style-white button [class*='btn-default'], .vi-active .vi-bg-color-white *:not(.vi-over) * button [class*='btn-default'], .vi-active .vi-bg-color-white .vi button [class*='btn-default'], .vi-active .vi-bg-color-black *:not(.vi-over) * [class*='btn-default'], .vi-active .vi-bg-color-black .vi [class*='btn-default'], .style-black button, .style-white [class*='btn-default'] button, .style-black [class*='btn-default'] [class*='btn-default'] button, .style-black button [class*='btn-default'] button, .vi-active .vi-bg-color-white *:not(.vi-over) * [class*='btn-default'] button, .vi-active .vi-bg-color-white .vi [class*='btn-default'] button, .style-white button button, .style-black [class*='btn-default'] button button, .style-black button button button, .style-black button * button button, .vi-active .vi-bg-color-white *:not(.vi-over) * button button, .vi-active .vi-bg-color-white .vi button button, .style-black button button * button, .style-black button * button * button, .vi-active .vi-bg-color-black *:not(.vi-over) * button, .vi-active .vi-bg-color-black .vi button {
-  border: 2px solid transparent; }
-  .style-black [class*='btn-default']:hover, .style-white [class*='btn-default'] [class*='btn-default']:hover, .vi-active .vi-bg-color-white *:not(.vi-over) * [class*='btn-default'] [class*='btn-default']:hover, .vi-active .vi-bg-color-white .vi [class*='btn-default'] [class*='btn-default']:hover, .style-white button [class*='btn-default']:hover, .vi-active .vi-bg-color-white *:not(.vi-over) * button [class*='btn-default']:hover, .vi-active .vi-bg-color-white .vi button [class*='btn-default']:hover, .vi-active .vi-bg-color-black *:not(.vi-over) * [class*='btn-default']:hover, .vi-active .vi-bg-color-black .vi [class*='btn-default']:hover, .style-black button:hover, .style-white [class*='btn-default'] button:hover, .vi-active .vi-bg-color-white *:not(.vi-over) * [class*='btn-default'] button:hover, .vi-active .vi-bg-color-white .vi [class*='btn-default'] button:hover, .style-white button button:hover, .vi-active .vi-bg-color-white *:not(.vi-over) * button button:hover, .vi-active .vi-bg-color-white .vi button button:hover, .vi-active .vi-bg-color-black *:not(.vi-over) * button:hover, .vi-active .vi-bg-color-black .vi button:hover {
-    border: 2px solid white; }
-    .style-black [class*='btn-default']:hover a, .style-white [class*='btn-default'] [class*='btn-default']:hover a, .vi-active .vi-bg-color-white *:not(.vi-over) * [class*='btn-default'] [class*='btn-default']:hover a, .vi-active .vi-bg-color-white .vi [class*='btn-default'] [class*='btn-default']:hover a, .style-white button [class*='btn-default']:hover a, .vi-active .vi-bg-color-white *:not(.vi-over) * button [class*='btn-default']:hover a, .vi-active .vi-bg-color-white .vi button [class*='btn-default']:hover a, .vi-active .vi-bg-color-black *:not(.vi-over) * [class*='btn-default']:hover a, .vi-active .vi-bg-color-black .vi [class*='btn-default']:hover a, .style-black button:hover a, .style-white [class*='btn-default'] button:hover a, .vi-active .vi-bg-color-white *:not(.vi-over) * [class*='btn-default'] button:hover a, .vi-active .vi-bg-color-white .vi [class*='btn-default'] button:hover a, .style-white button button:hover a, .vi-active .vi-bg-color-white *:not(.vi-over) * button button:hover a, .vi-active .vi-bg-color-white .vi button button:hover a, .vi-active .vi-bg-color-black *:not(.vi-over) * button:hover a, .vi-active .vi-bg-color-black .vi button:hover a {
-      color: white;
-      background: black; }
+.style-black, .vi-active .vi-bg-color-black *:not(.vi-over) * {
+  /* 
+	[class*='btn-default'], button{
+		@extend .style-white;
+		border: 2px solid transparent;
+		*{
+			@extend .style-white;
+		}
+		&:hover{
+			@extend .chess-white;
+			border: 2px solid $color_2;
+			a{
+				color: $color_2 ;
+				background: $color_1;
+			}
+		}
+	}
+	ul li{
+		&:hover, &.active{
+			color: $color_1 !important;
+			background-image: $color_2 !important;
+			border-color: $color_1 !important;
+			a{
+				background: inherit;
+				color: inherit;
+			}
+		}
+	}
 
-.style-black ul li:hover, .style-white [class*='btn-default'] ul li:hover, .vi-active .vi-bg-color-white *:not(.vi-over) * [class*='btn-default'] ul li:hover, .vi-active .vi-bg-color-white .vi [class*='btn-default'] ul li:hover, .style-white button ul li:hover, .vi-active .vi-bg-color-white *:not(.vi-over) * button ul li:hover, .vi-active .vi-bg-color-white .vi button ul li:hover, .vi-active .vi-bg-color-black *:not(.vi-over) * ul li:hover, .vi-active .vi-bg-color-black .vi ul li:hover, .style-black ul li.active, .style-white [class*='btn-default'] ul li.active, .vi-active .vi-bg-color-white *:not(.vi-over) * [class*='btn-default'] ul li.active, .vi-active .vi-bg-color-white .vi [class*='btn-default'] ul li.active, .style-white button ul li.active, .vi-active .vi-bg-color-white *:not(.vi-over) * button ul li.active, .vi-active .vi-bg-color-white .vi button ul li.active, .vi-active .vi-bg-color-black *:not(.vi-over) * ul li.active, .vi-active .vi-bg-color-black .vi ul li.active {
-  color: black !important;
-  background: white !important;
-  border-color: black !important; }
-  .style-black ul li:hover a, .style-white [class*='btn-default'] ul li:hover a, .vi-active .vi-bg-color-white *:not(.vi-over) * [class*='btn-default'] ul li:hover a, .vi-active .vi-bg-color-white .vi [class*='btn-default'] ul li:hover a, .style-white button ul li:hover a, .vi-active .vi-bg-color-white *:not(.vi-over) * button ul li:hover a, .vi-active .vi-bg-color-white .vi button ul li:hover a, .vi-active .vi-bg-color-black *:not(.vi-over) * ul li:hover a, .vi-active .vi-bg-color-black .vi ul li:hover a, .style-black ul li.active a, .style-white [class*='btn-default'] ul li.active a, .vi-active .vi-bg-color-white *:not(.vi-over) * [class*='btn-default'] ul li.active a, .vi-active .vi-bg-color-white .vi [class*='btn-default'] ul li.active a, .style-white button ul li.active a, .vi-active .vi-bg-color-white *:not(.vi-over) * button ul li.active a, .vi-active .vi-bg-color-white .vi button ul li.active a, .vi-active .vi-bg-color-black *:not(.vi-over) * ul li.active a, .vi-active .vi-bg-color-black .vi ul li.active a {
-    background: inherit;
-    color: inherit; }
+	.is-selected{
+		@extend .chess-black;
+	}
+ */ }
 
-.style-white [class*='btn-default'], .style-black [class*='btn-default'] [class*='btn-default'], .style-black button [class*='btn-default'], .vi-active .vi-bg-color-white *:not(.vi-over) * [class*='btn-default'], .vi-active .vi-bg-color-white .vi [class*='btn-default'], .style-white button, .style-black [class*='btn-default'] button, .style-black button button, .style-black button * button, .vi-active .vi-bg-color-white *:not(.vi-over) * button, .vi-active .vi-bg-color-white .vi button {
-  border: 2px solid transparent; }
-  .style-white [class*='btn-default']:hover, .style-black [class*='btn-default'] [class*='btn-default']:hover, .style-black button [class*='btn-default']:hover, .vi-active .vi-bg-color-white *:not(.vi-over) * [class*='btn-default']:hover, .vi-active .vi-bg-color-white .vi [class*='btn-default']:hover, .style-white button:hover, .style-black [class*='btn-default'] button:hover, .style-black button button:hover, .vi-active .vi-bg-color-white *:not(.vi-over) * button:hover, .vi-active .vi-bg-color-white .vi button:hover {
-    border: 2px solid black; }
-    .style-white [class*='btn-default']:hover a, .style-black [class*='btn-default'] [class*='btn-default']:hover a, .style-black button [class*='btn-default']:hover a, .vi-active .vi-bg-color-white *:not(.vi-over) * [class*='btn-default']:hover a, .vi-active .vi-bg-color-white .vi [class*='btn-default']:hover a, .style-white button:hover a, .style-black [class*='btn-default'] button:hover a, .style-black button button:hover a, .vi-active .vi-bg-color-white *:not(.vi-over) * button:hover a, .vi-active .vi-bg-color-white .vi button:hover a {
-      color: black;
-      background: white; }
+.style-white, .vi-active .vi-bg-color-white *:not(.vi-over) * {
+  /* 
+	[class*='btn-default'], button{
+		@extend .style-black;
+		border: 2px solid transparent;
+		*{
+			@extend .style-black;
+		}
+		&:hover{
+			@extend .chess-white;
+			border: 2px solid $color_2;
+			a{
+				color: $color_2 ;
+				background: $color_1;
+			}
+		}
+	}
+	ul li{
+		&:hover, &.active{
+			color: $color_1 !important;
+			background-image: $color_2 !important;
+			border-color: $color_1 !important;
+			a{
+				background: inherit;
+				color: inherit;
+			}
+		}
+	}
 
-.style-white ul li:hover, .style-black [class*='btn-default'] ul li:hover, .style-black button ul li:hover, .vi-active .vi-bg-color-white *:not(.vi-over) * ul li:hover, .vi-active .vi-bg-color-white .vi ul li:hover, .style-white ul li.active, .style-black [class*='btn-default'] ul li.active, .style-black button ul li.active, .vi-active .vi-bg-color-white *:not(.vi-over) * ul li.active, .vi-active .vi-bg-color-white .vi ul li.active {
-  color: white !important;
-  background: black !important;
-  border-color: white !important; }
-  .style-white ul li:hover a, .style-black [class*='btn-default'] ul li:hover a, .style-black button ul li:hover a, .vi-active .vi-bg-color-white *:not(.vi-over) * ul li:hover a, .vi-active .vi-bg-color-white .vi ul li:hover a, .style-white ul li.active a, .style-black [class*='btn-default'] ul li.active a, .style-black button ul li.active a, .vi-active .vi-bg-color-white *:not(.vi-over) * ul li.active a, .vi-active .vi-bg-color-white .vi ul li.active a {
-    background: inherit;
-    color: inherit; }
-
-.vi {
-  width: 100%; }
+	.is-selected{
+		@extend .chess-black;
+	}
+ */ }
 
 .vi-active body.vi-grayscale {
   -webkit-filter: grayscale(1);
@@ -6799,7 +6836,11 @@ tbody.collapse.in {
 .vi-active .vi-img-visibility-hidden .vi-img-visibility-none {
   display: none !important; }
 
+/* 
+	VI 
+*/
 .vi {
+  width: 100%;
   z-index: 5454545;
   position: fixed; }
   .vi.active {
@@ -7597,7 +7638,6 @@ table {
   display: inline-block;
   white-space: nowrap;
   text-align: center;
-  text-transform: uppercase;
   font-weight: 600;
   overflow: hidden;
   font-family: "Roboto"; }
@@ -7631,9 +7671,9 @@ table {
   .btn-def:not([class*="color-"]):not([class*="bg-color"]), .btn-icon:not([class*="color-"]):not([class*="bg-color"]) {
     color: white; }
   .btn-def:not([class*="bg-color"]), .btn-icon:not([class*="bg-color"]) {
-    background-color: #bf2b2b; }
-  .btn-def:not(.changecolor-none):hover, .btn-icon:not(.changecolor-none):hover {
     background-color: #1b0c38; }
+  .btn-def:not(.changecolor-none):hover, .btn-icon:not(.changecolor-none):hover {
+    background-color: #bf2b2b; }
   .btn-def.radius, .btn-icon.radius {
     -webkit-border-radius: 20px;
     border-radius: 20px; }
@@ -7759,6 +7799,7 @@ body {
   text-size-adjust: none;
   font: 15px "Roboto";
   overflow-x: hidden;
+  display: contents;
   background-color: white;
   background-image: url("../img/bg/bg-body.jpg");
   background-repeat: repeat-y;
@@ -7805,8 +7846,8 @@ ol {
     line-height: 150%; }
 
 hr {
-  margin-top: 5px;
-  margin-bottom: 5px; }
+  margin-top: 15px;
+  margin-bottom: 15px; }
 
 input:focus, button:focus {
   outline: transparent; }
@@ -7893,7 +7934,8 @@ h1 {
 h2 {
   font-size: 1.66667em;
   margin-bottom: 15px;
-  font-weight: 700; }
+  font-weight: 800;
+  text-transform: uppercase; }
   @media (max-width: 430px) {
     h2 {
       font-size: 1em; } }
@@ -8311,13 +8353,16 @@ label {
   .header-lang .hide-list {
     position: absolute;
     opacity: 0;
-    background-color: #1b0c38; }
+    background-color: #1b0c38;
+    padding: 10px;
+    margin-left: -10px; }
     .header-lang .hide-list li {
       margin: 5px 0; }
     .header-lang .hide-list img {
       -webkit-box-shadow: 0 0 10px -1px rgba(0, 0, 0, 0.5);
       box-shadow: 0 0 10px -1px rgba(0, 0, 0, 0.5); }
   .header-lang #langlist:checked ~ .hide-list {
+    z-index: 10;
     opacity: 1; }
 
 header-link {
@@ -9090,16 +9135,36 @@ figcaption {
     .bnr-carousel {
       word-wrap: break-word; } }
 
+.short-affiche-items .img-content-wrapper {
+  position: relative;
+  overflow: hidden; }
+
 .short-affiche-items .img {
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   height: 328px;
   background-position: center;
   -webkit-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1); }
 
 .short-affiche-items figure {
   position: relative; }
-  .short-affiche-items figure:nth-child(2) {
-    width: 64.05333%; }
+  .short-affiche-items figure:hover .img {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  @media (min-width: 991px) {
+    .short-affiche-items figure:nth-child(2) {
+      width: 64.05333%; } }
 
 .short-affiche-items .desc-content {
   position: absolute;
@@ -9159,7 +9224,8 @@ figcaption {
   .date-time-affiche:before {
     background-image: url("../img/other/date-time-marker.png");
     background-repeat: no-repeat;
-    z-index: -1; }
+    z-index: -1;
+    left: 0; }
   .date-time-affiche span {
     text-align: center;
     z-index: 1;
@@ -9168,6 +9234,100 @@ figcaption {
     -ms-transform: translateX(-8px);
     transform: translateX(-8px);
     display: block; }
+
+.short-events-items figure .wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+.short-events-items figure:hover .wrapper {
+  -webkit-box-shadow: 7px 7px 20px -5px rgba(0, 0, 0, 0.2);
+  box-shadow: 7px 7px 20px -5px rgba(0, 0, 0, 0.2); }
+
+.short-events-items figure:hover .img {
+  -webkit-filter: contrast(110%);
+  filter: contrast(110%); }
+
+@media (max-width: 991px) {
+  .short-events-items figure .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .short-events-items figure .img {
+    width: 100%; } }
+
+.short-events-items .img {
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  width: 280px;
+  height: 100%;
+  min-height: 220px;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+.short-events-items .desc-content {
+  position: relative;
+  min-height: 220px; }
+
+.short-events-items .desc-content-wrapper {
+  position: relative;
+  min-height: 140px;
+  padding: 15px 30px;
+  padding-bottom: 65px; }
+
+.short-events-items .date-content {
+  padding: 0 30px;
+  position: absolute;
+  width: 100%;
+  bottom: 15px; }
+
+.news-popular {
+  background-color: white; }
+
+.news-popular-items .wrapper {
+  padding: 24.7px 15px;
+  background-color: white;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+.news-popular-items .img {
+  height: 80px;
+  width: 95px;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+.news-popular-items .date-content {
+  margin-top: 14px; }
+
+.news-popular-items h5 {
+  margin: 0;
+  height: 40px;
+  overflow: hidden; }
+
+.news-popular-items .wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.news-popular-items figure:hover .wrapper {
+  background-color: #ededed; }
+
+.vi {
+  bottom: 0;
+  left: 0;
+  position: fixed; }
 
 /* 
 		_footer.scss
@@ -9178,80 +9338,25 @@ figcaption {
 #footer {
   position: relative;
   line-height: 170%;
-  background-repeat: repeat;
-  background-position-y: top;
-  background-color: white;
-  color: white; }
-  #footer:before {
-    font-size: 150px;
-    position: absolute;
-    top: 0; }
-  #footer h1 {
-    border-left: 0; }
+  font-size: 0.85em; }
 
 .footer-content {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #6d1815; }
-  .footer-content .wrapper {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between; }
-  @media (max-width: 991px) {
-    .footer-content .wrapper {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-      flex-direction: column; } }
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-image: url("../img/bg/bg-footer.jpg"); }
 
-.footer-logo .img-content, .footer-logo img {
-  width: 302px; }
-
-.footer-socicons {
-  font-size: 25px; }
-  .footer-socicons li {
-    display: inline-block;
-    -webkit-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    text-align: center;
-    margin-left: 5px;
-    color: white;
-    font-size: 15px; }
-    .footer-socicons li:nth-child(1) {
-      margin-left: 0; }
-    .footer-socicons li a {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      height: 100%;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-      -ms-flex-align: center;
-      align-items: center; }
-      .footer-socicons li a i {
-        width: 100%; }
-    .footer-socicons li:hover {
-      color: #200b48; }
-  .footer-socicons .fa-paper-plane {
-    font-size: 16px;
-    -webkit-transform: translate(-1px, 0);
-    -ms-transform: translate(-1px, 0);
-    transform: translate(-1px, 0); }
+.goslogos-items .img {
+  -webkit-background-size: auto auto;
+  background-size: auto;
+  height: 80px;
+  background-position: center; }
 
 .copy-content {
-  background-color: #bf2b2b;
+  background-color: #200b48;
   color: white; }
 
 .dev {

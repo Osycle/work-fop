@@ -315,15 +315,31 @@ figcaption{
 
 //content
 .short-affiche-items{
+	.img-content-wrapper{
+		position: relative;
+		overflow: hidden;
+	}
 	.img{
+		transition: all 0.5s ease-in-out;
 		height: 328px;
 		background-position: center;
 		background-size: cover;
+		transform-origin: 50% 50%;
+		transform: scale(1); 
 	}
 	figure{
 		position: relative;
-		&:nth-child(2){
-			width: 64.05333%;
+		&:hover{
+			.img{
+				transform: scale(1.05); 
+				backface-visibility: hidden;
+				//-moz-backface-visibility: hidden;
+			}
+		}
+		@media (min-width: 991px) {
+			&:nth-child(2){
+				width: 64.05333%;
+			}
 		}
 	}
 	.desc-content{
@@ -379,6 +395,7 @@ figcaption{
 		background-image: url('../img/other/date-time-marker.png');
 		background-repeat: no-repeat;
 		z-index: -1;
+		left: 0;
 	}
 	span{
 		text-align: center;
@@ -387,4 +404,101 @@ figcaption{
 		transform: translateX(-8px);
 		display: block;
 	}
+}
+
+
+
+
+//short-events
+.short-events-items{
+	figure{
+		.wrapper{
+			display: flex;
+			background-color: white;
+			transition: all 0.3s ease;
+		}
+		&:hover{
+			.wrapper{
+				box-shadow: 7px 7px 20px -5px rgba(black, 0.2);
+			}
+			.img{
+				filter: contrast(110%);
+			}
+		}
+		@media (max-width: 991px) {
+			.wrapper{
+				flex-direction: column;
+			}
+			.img{
+				width: 100%;
+			}
+		}
+	}
+	.img{
+		transition: all 0.3s ease;
+		width: 280px;
+		height: 100%;
+		min-height: 220px;
+		background-position: center;
+		background-size: cover;
+	}
+	.desc-content{
+		position: relative;
+		min-height: 220px;
+	}
+	.desc-content-wrapper{
+		position: relative;
+		min-height: 140px;
+		padding: 15px 30px;
+		padding-bottom: 65px;
+	}
+	.date-content{
+		padding: 0 30px;
+		position: absolute;
+		width: 100%;
+    bottom: 15px;
+	}
+}
+.news-popular{
+	background-color: white;
+	
+}
+.news-popular-items{
+	.wrapper{
+		padding: 24.7px 15px;
+		background-color: white;
+		transition: all 0.3s ease;
+	}
+	.img{
+		height: 80px;
+		width: 95px;
+		background-position: center;
+		background-size: cover;
+	}
+	.date-content{
+		margin-top: 14px;
+	}
+	h5{
+		margin: 0;
+		height: 40px;
+		overflow: hidden;
+	}
+	.wrapper{
+		display: flex;
+	}
+
+	figure{
+		&:hover{
+			.wrapper{
+				background-color: $color-gray-1;
+			}
+		}
+	}
+}
+
+//vi
+.vi{
+  bottom: 0;
+  left: 0;
+  position: fixed;
 }
