@@ -259,16 +259,10 @@ header-link{
 
 .socicons{
 	font-size: 14px;
-	.fa{
-		font-size: 14px;
-	}
-	.fa-vk{
-		font-size: 18px;	
-	}
 	li{
 		display: inline-block;
 		transition: color 0.3s ease;
-		margin-left: 5px;
+		margin-left: 8px;
 		&:nth-child(1){
 			margin-left: 0;
 		}
@@ -284,15 +278,7 @@ header-link{
 			color: $color-2;
 		}
 	}
-	.fa-paper-plane{
-		font-size: 16px;
-	}
-	.fa-instagram{
-		//font-size: 20px;
-	}
-	.fa-facebook{
-		//font-size: 20px;
-	}
+
 }
 
 
@@ -327,7 +313,7 @@ header-link{
     		&:before{
     			@extend .clafclear;
     			height: 15px;
-    			background-color: $color-gray-2;
+    			background-color: $color-gray-1;
     			width: 1px;
     			right: -1px;
     		}
@@ -375,7 +361,7 @@ header-link{
 		&:nth-child(1) a:after{
 			@extend .clafclear;
 			height: 15px;
-			background-color: $color-gray-2;
+			background-color: $color-gray-1;
 			width: 1px;
 			left: 0;
 		}

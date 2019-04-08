@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?q2l6av');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?q2l6av#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?q2l6av') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?q2l6av') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?q2l6av##{$icomoon-font-family}') format('svg');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?t932b9');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?t932b9#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?t932b9') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?t932b9') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?t932b9##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -26,69 +26,34 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icm-black-envelope {
+.icm-calendar-with-a-clock-time-tools {
   &:before {
-    content: $icm-black-envelope; 
+    content: $icm-calendar-with-a-clock-time-tools; 
   }
 }
-.icm-check {
+.icm-envelope-shape {
   &:before {
-    content: $icm-check; 
+    content: $icm-envelope-shape; 
   }
 }
-.icm-circles {
+.icm-phone-receiver {
   &:before {
-    content: $icm-circles; 
+    content: $icm-phone-receiver; 
   }
 }
-.icm-connect {
+.icm-placeholder-on-map-paper-in-perspective {
   &:before {
-    content: $icm-connect; 
+    content: $icm-placeholder-on-map-paper-in-perspective; 
   }
 }
-.icm-design {
+.icm-user {
   &:before {
-    content: $icm-design; 
+    content: $icm-user; 
   }
 }
-.icm-ecology {
+.icm-zoom {
   &:before {
-    content: $icm-ecology; 
-  }
-}
-.icm-facebook {
-  &:before {
-    content: $icm-facebook; 
-  }
-}
-.icm-location {
-  &:before {
-    content: $icm-location; 
-  }
-}
-.icm-phone-call-home {
-  &:before {
-    content: $icm-phone-call-home; 
-  }
-}
-.icm-phone-receiver-contacts {
-  &:before {
-    content: $icm-phone-receiver-contacts; 
-  }
-}
-.icm-search {
-  &:before {
-    content: $icm-search; 
-  }
-}
-.icm-snowflake {
-  &:before {
-    content: $icm-snowflake; 
-  }
-}
-.icm-telegram {
-  &:before {
-    content: $icm-telegram; 
+    content: $icm-zoom; 
   }
 }
 

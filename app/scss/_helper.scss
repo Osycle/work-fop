@@ -37,28 +37,22 @@ html{
 			padding-right: 5*$i+px;}}
 	.p-0{ padding: 0;}
 }
-.p-r-offset{
-	@media (min-width: 992px){
+
+
+@media (min-width: 992px){
+	.p-r-offset{
 		padding-right: 15px;
 	}
-}
-.p-l-offset{
-	@media (min-width: 992px){
+	.p-l-offset{
 		padding-left: 15px;
 	}
-}
-.p-t-offset{
-	@media (min-width: 992px){
+	.p-t-offset{
 		padding-top: 15px;
 	}
-}
-.p-b-offset{
-	@media (min-width: 992px){
+	.p-b-offset{
 		padding-bottom: 15px;
 	}
 }
-
-
 
 
 /* margin */
