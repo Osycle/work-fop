@@ -1000,7 +1000,7 @@ blockquote{
 main{
 	//overflow: hidden;
 	position: relative;
-	overflow: hidden;
+	overflow: inherit;
 	//min-height: 300px;
 	z-index: 1;
 	color: black;
@@ -1011,6 +1011,7 @@ main{
 	@extend .list-style-1;
 	@media (max-width: 991px){
 		text-align: center ;
+		overflow: hidden;
 	}
 	
 	p{

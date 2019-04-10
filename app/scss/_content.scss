@@ -692,9 +692,15 @@ figcaption{
 
 
 //affiche
+.affiche{
+
+}
+.box-shadow-1{
+	box-shadow: 1px 1px 5px -2px rgba(black, 0.3);
+}
 .affiche-calendar-month{
 	background-color: white;
-	box-shadow: 1px 1px 5px -2px rgba(black, 0.3);
+	@extend .box-shadow-1;
 	h4{
 		padding: 30px 30px;
 		padding-top: 28px;
@@ -751,6 +757,12 @@ figcaption{
 	padding-left: 25px;
 	padding-right: 25px;
 	background-color: white;
+	@media (max-width: 991px) {
+		margin-top: 30px;
+		margin-bottom: 30px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
 }
 .week-list{
 	display: flex;
@@ -762,6 +774,9 @@ figcaption{
 		display: block;
 		padding: 25px 0;
 		width: 100%;
+	}
+	@media (max-width: 991px) {
+		display: none;
 	}
 }
 .affiche-days-items{
@@ -790,7 +805,9 @@ figcaption{
 		color: white;
 		background-color: rgba(black, 0.4);
 		bottom: 5px;
-		padding: 0 3px;
+		width: 20px;
+		text-align: center;
+		font-size: 13px;
 		right: 5px;
 	}
 	figure{
@@ -800,26 +817,114 @@ figcaption{
 			position: relative;
 			border: 1px solid $color-gray-1;
 		}
+		&:hover{
+			.affiche-days-info{
+				opacity: 1;
+				pointer-events: auto;
+			}
+			
+		}
+		&:nth-child(7n+6), &:nth-child(7n+7){
+			.affiche-days-info{
+				right: 0;
+				.affiche-days-info-wrapper:before{
+					left: auto;
+					right: 50px;
+				}
+			}
+		}
 	}
 	.img{
 		height: 55px;
 		background-position: center;
 		background-size: cover;
 	}
+	@media (min-width: 992px) {
+		padding-bottom: 23px;
+	}
 }
 .affiche-days-info{
-	background-color: white;
-	padding: 5px 5px;
+	transition: opacity, transform, 0.3s ease;
+	opacity: 0;
+	padding-top: 10px;
+	pointer-events: none;
 	position: absolute;
-	min-width: 300px;
+	min-width: 400px;
+	z-index: 2;
+	.affiche-days-info-wrapper{
+		background-color: white;
+		padding: 10px 10px;
+		display: none;
+		box-shadow: 0 5px 16px -4px rgba(black, 0.3);
+		z-index: 10;
+		display: flex;
+		padding-top: 10px;
+		&:before{
+			@extend .clafclear;
+			width: 10px;
+			height: 10px;
+			left: 50px;
+			background-color: white;
+			pointer-events: none;
+			z-index: -1;
+			transform: matrix(1, 1, -1, 1, 0, -12);
+		}
+	}
 	h3{
 		&[class*="color-gray"]{
 			font-weight: 400;
+			font-size: em(16, 14);
 		}
 	}
 	.phone{
 		color: $color-2;
 		font-size: em(14, 15);
 		font-weight: 600;
+	}
+	.info-content{
+		width: 100%;
+	}
+	.date-content{
+		background-color: $color-2;
+		color: white;
+		display: flex;
+		min-width: 110px;
+		align-items: center;
+		text-align: center;
+		padding: 5px 10px;
+		justify-content: center;
+	}
+	.day{
+		font-weight: 600;
+		line-height: 100%;
+		font-size: 30px;
+	}
+	.month{
+		line-height: 100%;
+		font-size: 22px;
+	}
+	.time{
+		margin-top: 10px;
+		padding: 2px 5px;
+		background-color: rgba(white, 0.2);
+		font-size: 16px;
+	}
+	@media (max-width: 991px) {
+		display: none;
+	}
+}
+
+
+
+//VI
+.vi-img-visibility{
+	display: none !important;
+}
+.vi-active{
+	.icm-calendar-with-a-clock-time-tools{
+		display: none;
+	}
+	.btn-def, .btn-opacity{
+		border: 1px solid;
 	}
 }

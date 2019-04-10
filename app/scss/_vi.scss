@@ -10,16 +10,16 @@
 
 
 
-.chess-white, .chess-black{
+.chess-white:not(.vi-over), .chess-white:not(.vi-over) *, .chess-black:not(.vi-over), .chess-black:not(.vi-over) *{
 	box-shadow: none;
 }
 
-.chess-black{
+.chess-black:not(.vi-over), .chess-black:not(.vi-over) *{
 	color: white  !important;
 	background-color: black !important;
 	border-color: white !important;
 }
-.chess-white{
+.chess-white:not(.vi-over), .chess-white:not(.vi-over) *{
 	color: black  !important;
 	background-color: white !important;
 	border-color: black !important;
@@ -28,9 +28,9 @@
 
 //МИКСИН ЁПТЫ
 @mixin bg-color($color_1, $color_2) {
-	//*:not(.vi-over){
+	*:not(.vi-over){
 		@extend .chess-#{$color_1};
-	//}
+	}
 /* 
 	[class*='btn-default'], button{
 		@extend .style-#{$color_2};
@@ -67,18 +67,18 @@
 
 }
 
-.style-black{
+.style-black:not(.vi-over){
 	@include bg-color(black, white);
 }
 
-.style-white{
+.style-white:not(.vi-over){
 	@include bg-color(white, black);
 }
 
 
 
 .vi-active{
-	body.vi-grayscale{
+	body.vi-grayscale, body main{
 		filter: grayscale(1);
 	}
 
@@ -91,12 +91,17 @@
 
 
 
-
+	div:not(.img){
+		background-image: none !important;
+	}
 
 
 	//.vi-bg-color-white .vi {@extend .style-white;}
 	//.vi-bg-color-black .vi {@extend .style-black;}
-	
+	body.vi-bg-color-black{
+		background-color: black ;
+		background-image: none !important;
+	}
 	.vi-bg-color-black *:not(.vi-over) *{
 		@extend .style-black;
 	}
@@ -228,27 +233,22 @@
 				&:not(.active){
 					border: 2px solid;
 				}
-				&.active{
-					//color: white !important;
-					//background: black !important;
-					//border-color: white !important;
-				}
 				&:hover{
 					cursor: pointer;
 				}
 
 			}
+			.vi-bg-color-1.active{
+				background: white !important;
+				border-color: white !important;
+			}
+			.vi-bg-color-2.active{
+				background: black !important;
+				border-color: white !important;
+			}
 
-		}
-
-		.vi-bg-color-1{
-			//background: black !important;
-		}
-		.vi-bg-color-2{
-			//background: white !important;
 		}
 	}
-
 
 
 
@@ -303,6 +303,8 @@
 	.vi-reset{
 		margin: 5px 0;
 		font-size: 15px;
+		margin-left: 15px;
+		border: 1px solid black;
 		button{
 			transition: all 0.3s ease-out;
 			border: 0;
